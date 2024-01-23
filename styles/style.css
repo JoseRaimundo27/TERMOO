@@ -1,0 +1,68 @@
+
+:root {
+    --black: #000000;
+    --red: #D72323;
+    --white: #F5EDED;
+    --green: #9AE66E;
+    --brown: #3E3636;
+
+    --font-principal: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--black);
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: var(--font-principal);
+    color: var(--white);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 20rem;
+    text-align: center;
+}
+
+.main__titulo {
+    font-size: 3rem;
+}
+
+.container__blocos {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 2rem;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+}
+
+.container__blocos .bloco {
+    display: flex;  
+    align-items: center;  
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 50px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.bloco.right{
+    background-color: var(--green);
+}
+
+.bloco.wrong{
+    background-color: var(--red);
+}
+
+.bloco.hidden {
+    background-color: var(--brown);
+    cursor: not-allowed;
+}
