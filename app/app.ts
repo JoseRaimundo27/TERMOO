@@ -1,7 +1,9 @@
-import { conectaApi } from "./models/conectaAPI.js";
+import { Controller } from "./controllers/controller.js";
+import { Conexao } from "./models/conexao.js";
 
-const conexaoAPI = new conectaApi()
+const controller = new Controller()
 
-conexaoAPI.listaPalavras().then( result => {
-    console.log(result)
-})
+
+controller.adicionaPalavra("ponte")
+controller.listaPalavras()
+

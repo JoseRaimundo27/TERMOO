@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-export class conectaApi {
+export class Conexao {
     listaPalavras() {
         return __awaiter(this, void 0, void 0, function* () {
             const conexao = yield fetch("http://localhost:3000/words");
@@ -17,21 +17,17 @@ export class conectaApi {
     }
     postaPalavras(palavra) {
         return __awaiter(this, void 0, void 0, function* () {
-            try {
-                const conexao = yield fetch("http://localhost:3000/words", {
-                    method: "POST",
-                    headers: {
-                        "Content-type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        palavra: palavra
-                    })
-                });
-                return true;
-            }
-            catch (_a) {
-                return false;
-            }
+            const conexao = yield fetch("http://localhost:3000/words", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    palavra: palavra
+                })
+            });
+            const conexaoConvertida = yield conexao.json();
+            return conexaoConvertida;
         });
     }
 }

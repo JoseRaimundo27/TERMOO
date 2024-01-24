@@ -1,6 +1,6 @@
 import { Palavra } from "./palavraTipo";
 
-export class conectaApi {
+export class Conexao {
 
     public listaJson: Palavra[]
 
@@ -10,7 +10,7 @@ export class conectaApi {
         return this.listaJson;
     }
 
-    public async postaPalavras(palavra: string) {
+    public async postaPalavras(palavra: string): Promise<void> {
         const conexao = await fetch("http://localhost:3000/words", {
             method: "POST",
             headers: {
@@ -20,7 +20,6 @@ export class conectaApi {
                 palavra: palavra
             })
         })
-
         const conexaoConvertida = await conexao.json()
         return conexaoConvertida
     }
