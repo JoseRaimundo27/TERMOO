@@ -1,0 +1,26 @@
+{
+  "name": "termoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server ",
+    "start": "concurrently \"npm run watch\" \"npm run server\" \"npm run json\"",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "json": "json-server --watch ./backend/words.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-alpha.22",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
