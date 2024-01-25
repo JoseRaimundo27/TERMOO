@@ -4,11 +4,11 @@ export class Controller {
         this.conexao = new Conexao();
     }
     adicionaPalavra(palavra) {
-        if (this.conexao.postaPalavras(palavra)) {
-            console.log("FOI");
+        try {
+            this.conexao.postaPalavras(palavra);
         }
-        else {
-            console.log("ERRO");
+        catch (error) {
+            console.log(error);
         }
     }
     listaPalavras() {

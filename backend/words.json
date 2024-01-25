@@ -1,59 +1,55 @@
 {
   "words": [
     {
-      "palavra": "aviao"
+      "palavra": "aviao",
+      "id": "bf75"
     },
     {
-      "palavra": "astro"
+      "palavra": "astro",
+      "id": "c4a2"
     },
     {
-      "palavra": "figma"
+      "palavra": "figma",
+      "id": "22a6"
     },
     {
-      "palavra": "poste"
+      "palavra": "poste",
+      "id": "62fc"
     },
     {
-      "palavra": "posto"
+      "palavra": "posto",
+      "id": "8c99"
     },
     {
-      "palavra": "costa"
+      "palavra": "costa",
+      "id": "181c"
     },
     {
-      "palavra": "fuzil"
+      "palavra": "fuzil",
+      "id": "509b"
     },
     {
-      "palavra": "mental"
+      "palavra": "mental",
+      "id": "e64c"
     },
     {
-      "palavra": "fonte"
+      "palavra": "fonte",
+      "id": "116c"
     },
     {
-      "palavra": "touca"
+      "palavra": "touca",
+      "id": "0075"
     },
     {
-      "palavra": "queijo"
+      "palavra": "queijo",
+      "id": "dc39"
     },
     {
-      "palavra": "janta"
+      "palavra": "janta",
+      "id": "040f"
     },
     {
-      "id": "f3fd",
-      "palavra": "ponte"
-    },
-    {
-      "id": "2e28",
-      "palavra": "ponte"
-    },
-    {
-      "id": "f285",
-      "palavra": "ponte"
-    },
-    {
-      "id": "9c9f",
-      "palavra": "ponte"
-    },
-    {
-      "id": "8aa1",
+      "id": "0c58",
       "palavra": "ponte"
     }
   ]

@@ -5,10 +5,10 @@ export class Controller {
     private conexao = new Conexao()
 
     public adicionaPalavra(palavra: string): void {
-        if (this.conexao.postaPalavras(palavra)) {
-            console.log("FOI")
-        } else {
-            console.log("ERRO")
+        try{
+            this.conexao.postaPalavras(palavra)
+        }catch(error){
+            console.log(error)
         }
     }
 
