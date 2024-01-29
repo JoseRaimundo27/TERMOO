@@ -30,4 +30,11 @@ export class Conexao {
             return conexaoConvertida;
         });
     }
+    getQuantidadePalavras() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const conexao = yield fetch("http://localhost:3000/words");
+            this.listaJson = yield conexao.json();
+            return this.listaJson.length;
+        });
+    }
 }

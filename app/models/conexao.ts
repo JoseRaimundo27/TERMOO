@@ -23,4 +23,10 @@ export class Conexao {
         const conexaoConvertida = await conexao.json()
         return conexaoConvertida
     }
+
+    public async getQuantidadePalavras () : Promise<number> {
+        const conexao = await fetch("http://localhost:3000/words")
+        this.listaJson = await conexao.json()
+        return this.listaJson.length;
+    }
 }
